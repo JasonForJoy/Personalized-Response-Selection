@@ -15,7 +15,7 @@ Besides, our BERT-based model implemented with the context-response-aware person
 
 <div align=center><img src="image/table4.png" width=50%></div>
 
-<div align=center><img src="image/table5.png" width=80%></div>
+<div align=center><img src="image/table5.png" width=90%></div>
 
 ## Update
 Please keep an eye on this repository if you are interested in our work.
