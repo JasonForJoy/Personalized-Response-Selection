@@ -1,6 +1,7 @@
 # Partner Matters! An Empirical Study on Fusing Personas for Personalized Response Selection in Retrieval-Based Chatbots
-This repository contains the source code for the _SIGIR 2021_ paper **Partner Matters! An Empirical Study on Fusing Personas for Personalized Response Selection in Retrieval-Based Chatbots**. Jia-Chen Gu, Hui Liu, Zhen-Hua Ling, Quan Liu, Zhigang Chen, Xiaodan Zhu. <br>
-Preprint and code will be released soon. <br>
+This repository contains the source code for the _SIGIR 2021_ paper [Partner Matters! An Empirical Study on Fusing Personas for Personalized Response Selection in Retrieval-Based Chatbots](https://arxiv.org/pdf/2105.09050.pdf). Jia-Chen Gu, Hui Liu, Zhen-Hua Ling, Quan Liu, Zhigang Chen, Xiaodan Zhu. <br>
+Hopefully, code will be released at the end of June. Thanks for your patience. <br>
+
 
 ## Introduction
 Persona can function as the prior knowledge for maintaining the consistency of dialogue systems.
@@ -16,6 +17,25 @@ Besides, our BERT-based model implemented with the context-response-aware person
 <div align=center><img src="image/table4.png" width=50%></div>
 
 <div align=center><img src="image/table5.png" width=90%></div>
+
+
+## Cite
+If you think our work is helpful or use the code, please cite the following paper:
+**"Partner Matters! An Empirical Study on Fusing Personas for Personalized Response Selection in Retrieval-Based Chatbots"**
+Jia-Chen Gu, Hui Liu, Zhen-Hua Ling, Quan Liu, Zhigang Chen, Xiaodan Zhu. _SIGIR (2021)_
+
+```
+@inproceedings{gu2021partner,
+ author = {Gu, Jia-Chen and Liu, Hui and Ling, Zhen-Hua and Liu, Quan and Chen, Zhigang and Zhu, Xiaodan},
+ title = {Partner Matters! An Empirical Study on Fusing Personas for Personalized Response Selection in Retrieval-Based Chatbots},
+ year = {2021},
+ publisher = {Association for Computing Machinery},
+ address = {New York, NY, USA},
+ booktitle = {Proceedings of the 44th International ACM SIGIR Conference on Research and Development in Information Retrieval},
+ series = {SIGIR '21}
+ }
+```
+
 
 ## Update
 Please keep an eye on this repository if you are interested in our work.
