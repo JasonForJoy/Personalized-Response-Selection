@@ -1,6 +1,5 @@
 # Partner Matters! An Empirical Study on Fusing Personas for Personalized Response Selection in Retrieval-Based Chatbots
 This repository contains the source code for the _SIGIR 2021_ paper [Partner Matters! An Empirical Study on Fusing Personas for Personalized Response Selection in Retrieval-Based Chatbots](https://arxiv.org/pdf/2105.09050.pdf). Jia-Chen Gu, Hui Liu, Zhen-Hua Ling, Quan Liu, Zhigang Chen, Xiaodan Zhu. <br>
-Hopefully, code will be released at the end of June. Thanks for your patience. <br>
 
 
 ## Introduction
@@ -17,6 +16,49 @@ Besides, our BERT-based model implemented with the context-response-aware person
 <div align=center><img src="image/table4.png" width=50%></div>
 
 <div align=center><img src="image/table5.png" width=90%></div>
+
+
+## Dependencies
+Python 3.6 <br>
+Tensorflow 1.13.1
+
+
+## Download
+- Download the [BERT released by the Google research](https://storage.googleapis.com/bert_models/2018_10_18/uncased_L-12_H-768_A-12.zip), 
+  and move to path: ./BERT-based/uncased_L-12_H-768_A-12 <br>
+- Download the PERSONA-CHAT dataset [here](https://drive.google.com/open?id=1gNyVL5pSMO6DnTIlA9ORNIrd2zm8f3QH) or from [ParlAI](https://parl.ai/), and unzip it to the folder of ```data```. <br>
+Run the following commands and the processed files are stored in ```data/personachat_processed/```. <br>
+```
+cd data
+python data_preprocess.py
+```
+
+
+## Training
+Take the BERT-CRA model as an example. <br>
+Create the fine-tuning data.
+```
+cd BERT-based/BERT-CRA/
+python data_process_tfrecord.py
+```
+Running the fine-tuning process.
+```
+cd scripts/
+bash train.sh
+```
+
+
+## Testing
+Modify the variable ```restore_model_dir``` in ```test.sh```
+```
+cd scripts/
+bash test.sh
+```
+A "output_test.txt" file which records scores for each context-response pair will be saved to the path of ```restore_model_dir```. <br>
+Modify the variable ```test_out_filename``` in ```compute_metrics.py``` and then run the following command, various metrics will be shown.
+```
+python compute_metrics.py
+```
 
 
 ## Cite
