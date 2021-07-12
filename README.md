@@ -67,13 +67,19 @@ If you think our work is helpful or use the code, please cite the following pape
 Jia-Chen Gu, Hui Liu, Zhen-Hua Ling, Quan Liu, Zhigang Chen, Xiaodan Zhu. _SIGIR (2021)_
 
 ```
-@inproceedings{gu2021partner,
+@inproceedings{10.1145/3404835.3462858,
  author = {Gu, Jia-Chen and Liu, Hui and Ling, Zhen-Hua and Liu, Quan and Chen, Zhigang and Zhu, Xiaodan},
  title = {Partner Matters! An Empirical Study on Fusing Personas for Personalized Response Selection in Retrieval-Based Chatbots},
  year = {2021},
+ isbn = {9781450380379},
  publisher = {Association for Computing Machinery},
  address = {New York, NY, USA},
+ url = {https://doi.org/10.1145/3404835.3462858},
+ doi = {10.1145/3404835.3462858},
  booktitle = {Proceedings of the 44th International ACM SIGIR Conference on Research and Development in Information Retrieval},
+ pages = {565–574},
+ numpages = {10},
+ location = {Virtual Event, Canada},
  series = {SIGIR '21}
  }
 ```
